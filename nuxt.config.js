@@ -1,10 +1,8 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: "static",
   server: {
     host: "0.0.0.0",
   },
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "code4okinawa-org-nuxt",
     htmlAttrs: {
@@ -18,25 +16,16 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  plugins: [
+    //
+    "~/plugins/wpapi.ts",
+  ],
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
+    //
     "@nuxt/typescript-build",
   ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 };
