@@ -9,7 +9,6 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@types/wpapi": "^1.1.1",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "wp-types": "^2.12.0",
@@ -17,6 +16,7 @@
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.7",
-    "@nuxt/typescript-build": "^2.1.0"
+    "@nuxt/typescript-build": "^2.1.0",
+    "@types/wpapi": "^1.1.1"
   }
 }
